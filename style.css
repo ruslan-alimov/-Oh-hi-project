@@ -1,42 +1,49 @@
-body {
-    font-family: Arial, sans-serif;
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #f0f0f0;
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: linear-gradient(45deg, #FF6F91, #FF7D77, #F9ED69, #68B3B0);
+    background-size: 400% 400%;
+    animation: gradientBG 15s ease infinite;
 }
 
-h1 {
-    text-align: center;
-    color: #333;
+@keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
 }
 
-label {
-    display: block;
-    margin-bottom: 10px;
-    font-weight: bold;
+.flag {
+    animation: bounce 2s infinite;
 }
 
-select {
-    width: 100%;
-    padding: 10px;
-    font-size: 16px;
-    margin-bottom: 20px;
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-30px);
+    }
+    60% {
+        transform: translateY(-15px);
+    }
 }
 
-#greeting-display {
-    background-color: white;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+.image {
+    transition: transform 0.3s;
 }
 
-#greeting {
-    color: #4CAF50;
-    margin-bottom: 10px;
+.image:hover {
+    transform: scale(1.1);
 }
 
-#fact {
-    font-style: italic;
-    color: #666;
+.header, .footer {
+    transition: all 0.3s ease;
+}
+
+.header:hover, .footer:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
 }
