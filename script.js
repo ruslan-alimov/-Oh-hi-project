@@ -41,9 +41,9 @@ const countries = {
     },
     Uzbekiston: {
         greeting: "Salom",
-        fact: "Uzbekistan is home to the ancient Silk Road cities of Samarkand and Bukhara, known for their stunning Islamic architecture."{
-
-    };
+        fact: "Uzbekistan is home to the ancient Silk Road cities of Samarkand and Bukhara, known for their stunning Islamic architecture."
+    }
+};
 
 
 const select = document.getElementById('country-select');
