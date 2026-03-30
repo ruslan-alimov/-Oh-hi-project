@@ -3,33 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Greetings Around the World</title>
+    <title>Oh Hi! - Greetings Around the World</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Greetings in Different Countries</h1>
-    <label for="country-select">Choose a country:</label>
-    <select id="country-select">
-        <option value="">Select a country</option>
-        <option value="usa">United States</option>
-        <option value="france">France</option>
-        <option value="japan">Japan</option>
-        <option value="spain">Spain</option>
-        <option value="germany">Germany</option>
-        <option value="italy">Italy</option>
-        <option value="china">China</option>
-        <option value="india">India</option>
-        <option value="brazil">Brazil</option>
-        <option value="russia">Russia</option>
-        <option value="uzbekistan">Uzbekistan</option>
-    </select>
-    <div id="greeting-display">
-        <div id="flag-display" style="font-size: 80px; margin: 20px 0;">🌍</div>
-        <div id="deco-display" style="font-size: 40px; margin: 10px 0;">✨</div>
-        <h2 id="country-name">Select a country</h2>
-        <h3 id="greeting">Greeting will appear here</h3>
-        <p id="fact">Fun fact will appear here.</p>
+    <div class="container">
+        <h1>🌍 Oh Hi! - Greetings Around the World</h1>
+        
+        <div class="content">
+            <label for="country-select">🎯 Choose a country:</label>
+            <select id="country-select">
+                <option value="">Select a country</option>
+                <option value="usa">🇺🇸 United States</option>
+                <option value="france">🇫🇷 France</option>
+                <option value="japan">🇯🇵 Japan</option>
+                <option value="spain">🇪🇸 Spain</option>
+                <option value="germany">🇩🇪 Germany</option>
+                <option value="italy">🇮🇹 Italy</option>
+                <option value="china">🇨🇳 China</option>
+                <option value="india">🇮🇳 India</option>
+                <option value="brazil">🇧🇷 Brazil</option>
+                <option value="russia">🇷🇺 Russia</option>
+                <option value="uzbekistan">🇺🇿 Uzbekistan</option>
+            </select>
+
+            <div id="greeting-display">
+                <div id="flag-display">🌍</div>
+                <img id="country-image" alt="Country image" />
+                <h2 id="country-name">Select a country</h2>
+                <h3 id="greeting">Greeting will appear here</h3>
+                <p id="fact">Fun fact will appear here.</p>
+                <div id="deco-display">✨</div>
+            </div>
+        </div>
     </div>
+
     <script src="script.js"></script>
 </body>
 </html>
